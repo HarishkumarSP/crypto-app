@@ -4,6 +4,7 @@ import { Typography, Row, Col, Select, Avatar, Card } from 'antd'
 import { Link } from 'react-router-dom'
 import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi'
 import { useGetCryptosQuery } from '../services/cryptoApi'
+import Loader from './Loader'
 
 const { Title, Text } = Typography
 const { Option } = Select
@@ -17,8 +18,7 @@ const News = ({ simplified }) => {
         count: simplified ? 6 : 12
     })
     const { data } = useGetCryptosQuery(100)
-    console.log(cryptoNews);
-    if (!cryptoNews?.value) return 'Loading...'
+    if (!cryptoNews?.value) return <Loader />
     return (
         <>
             {!simplified && (

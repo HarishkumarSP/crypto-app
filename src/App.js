@@ -31,14 +31,17 @@ const App = () => {
         </Layout>
         <div className='footer'>
           <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>
-            Cryptoworld <br />
-            All rights reserved
+            Welcome to my Cryptoworld :) <br />
+            All rights reserved.
           </Typography.Title>
           <Space>
             <Link to='/'>Home</Link>
             <Link to='/exchanges'>Exchanges</Link>
             <Link to='/news'>News</Link>
-          </Space>
+          </Space> <br />
+          <span className='text'>
+            Made with <i className="fas fa-heart pulse" /> by <a href="https://github.com/HarishkumarSP?tab=repositories" target="_blank">Harish</a>
+          </span>
         </div>
       </div>
     </div>

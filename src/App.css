@@ -23,7 +23,7 @@ a:hover {
 }
 
 .navbar {
-	flex: 0.2;
+	flex: 0.19;
 	background-color: rgb(0, 21, 41);
 }
 
@@ -45,13 +45,14 @@ a:hover {
 
 .logo-container {
 	background-color: #001529;
-	display: grid;
+	display: flex;
 	padding: 20px;
 	align-items: center;
 	width: 100%;
 }
 .logo {
 	margin: 0 0 0 15px;
+	margin-top: 10px;
 }
 .logo a {
 	color: white;
@@ -368,10 +369,25 @@ a:hover {
 	margin-top: 20px !important;
 }
 
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+	display: grid !important;
+}
+.ant-typography + h5.ant-typography {
+	margin-top: 0rem !important;
+}
+
 .footer {
 	background-color: #001529;
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
 	align-items: center;
+}
+
+.footer .text {
+	font-weight: 100;
+	color: gainsboro;
+}
+.footer .fas {
+	color: red;
 }

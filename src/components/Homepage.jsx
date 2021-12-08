@@ -4,15 +4,15 @@ import { Typography, Row, Col, Statistic } from 'antd'
 import { Link } from 'react-router-dom'
 import { useGetCryptosQuery } from '../services/cryptoApi'
 import { Cryptocurrencies, News } from '../components'
+import Loader from './Loader'
 
 const { Title } = Typography
 
 const Homepage = () => {
 	const { data: cryptoData, isFetching } = useGetCryptosQuery(10)
-	console.log(cryptoData, isFetching);
 	const globalStats = cryptoData?.data?.stats
 
-	if (isFetching) return 'Loading...'
+	if (isFetching) return <Loader />
 
 	return (
 		<>
