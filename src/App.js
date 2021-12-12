@@ -40,7 +40,7 @@ const App = () => {
             <Link to='/news'>News</Link>
           </Space> <br />
           <span className='text'>
-            Made with <i className="fas fa-heart pulse" /> by <a href="https://github.com/HarishkumarSP?tab=repositories" target="_blank">Harish</a>
+            Made with <i className="fas fa-heart pulse" /> by <a href="https://github.com/HarishkumarSP" target="_blank">Harish</a>
           </span>
         </div>
       </div>
