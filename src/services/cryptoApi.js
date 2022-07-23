@@ -20,9 +20,10 @@ export const cryptoApi = createApi({
             query: (coinId) => createRequest(`/coin/${coinId}`)
         }),
         getCryptoHistory: builder.query({
-            query: ({ coinId, timePeriod }) => createRequest(`/coin/${coinId}/history/${timePeriod}`)
+            query: ({ coinId, timePeriod }) => createRequest(`/coin/${coinId}/history?timePeriod=${timePeriod}`)
         }),
         getExchanges: builder.query({
+            // Free api is not allowing now for this endpoint
             query: () => createRequest(`/exchanges`)
         })
     })
